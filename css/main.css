@@ -1,0 +1,205 @@
+/* -------- global styles -------- */
+html,body {
+	margin: 0 auto;
+	font-family: "Lucida Grande", Arial, sans-serif;
+	font-size: 12px;
+	
+}
+
+a {
+	color: #336699;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #6699cc;
+}
+
+h1 {
+	font-size: 58px;
+	line-height: 58px;
+	color: #232323;
+	text-align: center;
+	white-space: nowrap;
+	font-family: "Crimson Text", "Times New Roman";
+	font-weight: 400;
+	margin-top: 14px;
+	letter-spacing: -2px;
+
+}
+
+h2 {
+	font-size: 21px;
+	color: #336699;
+	text-decoration: underline;
+	display: inline;
+}
+
+h3 {
+	text-align: center;
+	font-family: "Crimson Text", "Times New Roman";
+	font-weight: 400;	
+	font-size: 20px;
+	margin-top: -15px;
+	white-space: nowrap;
+}
+
+p {
+	font-size: 20px;
+	line-height: 27px;
+	color: #222222;
+	font-family: "CrimsonSemibold", "Times New Roman", Georgia, serif;
+}
+
+div.wrapper {
+}
+
+/* -------- nav styles -------- */
+ul#nav  {
+	list-style-type: none;
+	text-align: right;
+	display: inline-block;
+	float: right;
+	margin:17px 50px;
+	
+}
+
+ul#nav li  {
+	display: inline;
+	margin: 0 10px;
+	line-height: 30px;
+}
+
+ul#nav a.signIn  {
+	color: #1DAFDF;
+}
+
+ul#nav a.signIn:hover  {
+	color: #336699;
+}
+
+div.today {
+	color: #999999;
+	float: left;
+	display: inline-block;
+	margin: 30px 0 0 50px;
+}
+
+div #bannerMain {
+		clear: both;
+		margin: 75px auto 0 auto;
+}
+
+div.logo {
+	text-align: center;
+}
+
+/* ----  Product Selector Box ----*/
+
+
+
+div.productSelect {
+	margin: 0px auto;
+	height: auto;
+	white-space: nowrap;
+	width: 680px;
+	padding: 0;
+}
+
+div.productBox {
+	text-align: center;
+	height: 206px;
+	padding: 20px 18px;
+	float: left;
+	margin: 20px;
+	width:146px;
+	background: -moz-linear-gradient(
+		top,
+		#fdfdfd 0%,
+		#efefef);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#fdfdfd),
+		to(#efefef));
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #e8e8e8;
+	-moz-box-shadow:
+		0px 0px 4px rgba(000,000,000,0.1),
+		inset 0px 7px 7px rgba(255,255,255,0.7);
+	-webkit-box-shadow:
+		0px 0px 4px rgba(000,000,000,0.1),
+		inset 0px 7px 70px rgba(255,255,255,0.7);
+	box-shadow:
+		0px 0px 4px rgba(000,000,000,0.1),
+		inset 0px 7px 70px rgba(255,255,255,0.7);
+}
+
+img.productPic {
+/* 	border: 1px dotted pink; */
+	margin: 0 0 5px 0;
+	
+}
+
+p.redText {
+	font-family: "Lucida Grande";
+	font-size: 14px;
+	color: #cc0000;
+	font-weight: 700;
+	margin-top: 5px;
+}
+
+p.desc {
+	font-family: "Lucida Grande";
+	font-size: 14px;
+	line-height: 19px;
+	color: #222222;
+	font-weight: 400;
+	margin-top: -5px;
+	white-space: normal;
+	padding-bottom: 0px;
+	margin-bottom: 37px;
+}
+
+sup {
+	margin: 3px 0 0 0;
+	clear: left;
+	color: #999999;
+	padding: 0 0 0 0px;
+	vertical-align: top;
+	font-size: 11px;
+}
+
+
+.sectionEnd {
+	height: 20px;
+	width: 100%
+	margin-top: 80px auto;
+	background-image: url("../images/stars.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-align: center;	
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
