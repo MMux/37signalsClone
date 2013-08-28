@@ -1,8 +1,8 @@
 /* -------- global styles -------- */
 html,body {
 	margin: 0 auto;
-	font-family: "Lucida Grande", Arial, sans-serif;
 	font-size: 12px;
+	font-family: "Lucida Grande", Arial, sans-serif;
 	
 }
 
@@ -16,39 +16,39 @@ a:hover {
 }
 
 h1 {
-	font-size: 58px;
-	line-height: 58px;
+	margin-top: 14px;
 	color: #232323;
 	text-align: center;
 	white-space: nowrap;
-	font-family: "Crimson Text", "Times New Roman";
-	font-weight: 400;
-	margin-top: 14px;
 	letter-spacing: -2px;
+	font-weight: 400;
+	font-size: 58px;
+	font-family: "Crimson Text", "Times New Roman";
+	line-height: 58px;
 
 }
 
 h2 {
-	font-size: 21px;
+	display: inline;
 	color: #336699;
 	text-decoration: underline;
-	display: inline;
+	font-size: 21px;
 }
 
 h3 {
+	margin-top: -15px;
 	text-align: center;
-	font-family: "Crimson Text", "Times New Roman";
+	white-space: nowrap;
 	font-weight: 400;	
 	font-size: 20px;
-	margin-top: -15px;
-	white-space: nowrap;
+	font-family: "Crimson Text", "Times New Roman";
 }
 
 p {
-	font-size: 20px;
-	line-height: 27px;
 	color: #222222;
+	font-size: 20px;
 	font-family: "CrimsonSemibold", "Times New Roman", Georgia, serif;
+	line-height: 27px;
 }
 
 div.wrapper {
@@ -56,11 +56,11 @@ div.wrapper {
 
 /* -------- nav styles -------- */
 ul#nav  {
-	list-style-type: none;
-	text-align: right;
 	display: inline-block;
 	float: right;
 	margin:17px 50px;
+	list-style-type: none;
+	text-align: right;
 	
 }
 
@@ -79,10 +79,10 @@ ul#nav a.signIn:hover  {
 }
 
 div.today {
-	color: #999999;
-	float: left;
 	display: inline-block;
+	float: left;
 	margin: 30px 0 0 50px;
+	color: #999999;
 }
 
 div #bannerMain {
@@ -100,19 +100,22 @@ div.logo {
 
 div.productSelect {
 	margin: 0px auto;
+	padding: 0;
+	width: 680px;
 	height: auto;
 	white-space: nowrap;
-	width: 680px;
-	padding: 0;
 }
 
 div.productBox {
-	text-align: center;
-	height: 206px;
-	padding: 20px 18px;
 	float: left;
 	margin: 20px;
+	padding: 20px 18px;
 	width:146px;
+	height: 206px;
+	border: 1px solid #e8e8e8;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
 	background: -moz-linear-gradient(
 		top,
 		#fdfdfd 0%,
@@ -121,19 +124,16 @@ div.productBox {
 		linear, left top, left bottom, 
 		from(#fdfdfd),
 		to(#efefef));
-	-moz-border-radius: 6px;
-	-webkit-border-radius: 6px;
-	border-radius: 6px;
-	border: 1px solid #e8e8e8;
-	-moz-box-shadow:
-		0px 0px 4px rgba(000,000,000,0.1),
-		inset 0px 7px 7px rgba(255,255,255,0.7);
 	-webkit-box-shadow:
 		0px 0px 4px rgba(000,000,000,0.1),
 		inset 0px 7px 70px rgba(255,255,255,0.7);
+	-moz-box-shadow:
+		0px 0px 4px rgba(000,000,000,0.1),
+		inset 0px 7px 7px rgba(255,255,255,0.7);
 	box-shadow:
 		0px 0px 4px rgba(000,000,000,0.1),
 		inset 0px 7px 70px rgba(255,255,255,0.7);
+	text-align: center;
 }
 
 img.productPic {
@@ -143,44 +143,44 @@ img.productPic {
 }
 
 p.redText {
-	font-family: "Lucida Grande";
-	font-size: 14px;
+	margin-top: 5px;
 	color: #cc0000;
 	font-weight: 700;
-	margin-top: 5px;
+	font-size: 14px;
+	font-family: "Lucida Grande";
 }
 
 p.desc {
-	font-family: "Lucida Grande";
-	font-size: 14px;
-	line-height: 19px;
-	color: #222222;
-	font-weight: 400;
 	margin-top: -5px;
-	white-space: normal;
-	padding-bottom: 0px;
 	margin-bottom: 37px;
+	padding-bottom: 0px;
+	color: #222222;
+	white-space: normal;
+	font-weight: 400;
+	font-size: 14px;
+	font-family: "Lucida Grande";
+	line-height: 19px;
 }
 
 sup {
-	margin: 3px 0 0 0;
 	clear: left;
-	color: #999999;
+	margin: 3px 0 0 0;
 	padding: 0 0 0 0px;
+	color: #999999;
 	vertical-align: top;
 	font-size: 11px;
 }
 
 
-.sectionEnd {
+.sectionEnd {	
+	clear: both;
+	width: 100%;
+	margin: 80px auto;
 	height: 20px;
-	width: 100%
-	margin-top: 80px auto;
 	background-image: url("../images/stars.png");
 	background-position: center center;
 	background-repeat: no-repeat;
-	text-align: center;	
-	clear: both;
+	text-align: center;
 }
 
 
