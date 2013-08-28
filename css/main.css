@@ -1,3 +1,16 @@
+.clearfix:after {
+ content: ".";
+ display: block;
+ clear: both;
+ visibility: hidden;
+ line-height: 0;
+ height: 0;
+}
+  
+.clearfix {
+ display: inline-block;
+}
+
 /* -------- global styles -------- */
 html,body {
 	margin: 0 auto;
@@ -81,13 +94,13 @@ ul#nav a.signIn:hover  {
 div.today {
 	display: inline-block;
 	float: left;
-	margin: 30px 0 0 50px;
+	margin: 24px 0 0 50px;
 	color: #999999;
 }
 
 div #bannerMain {
 		clear: both;
-		margin: 75px auto 0 auto;
+		margin: 78px auto 0 auto;
 }
 
 div.logo {
@@ -99,11 +112,19 @@ div.logo {
 
 
 div.productSelect {
-	margin: 0px auto;
+/* 	margin:  auto; */
 	padding: 0;
-	width: 680px;
+	width: auto;
 	height: auto;
+	display: block;
+	
+}
+
+div.productWrap {
+	display: block;
+	margin: 0 auto;
 	white-space: nowrap;
+	width: 672px;
 }
 
 div.productBox {
@@ -175,7 +196,7 @@ sup {
 .sectionEnd {	
 	clear: both;
 	width: 100%;
-	margin: 80px auto;
+	margin: 20px auto;
 	height: 20px;
 	background-image: url("../images/stars.png");
 	background-position: center center;
