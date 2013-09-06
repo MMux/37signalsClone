@@ -1,0 +1,13 @@
+
+Pseudocode:
+
+When the page loads, the arrows will have display:none
+
+When the user hovers over the product box <a>, the arrows need to toggleClass or remove? to display
+
+The div which contains the text needs to have its content swapped upon the hover over a product box. 
+
+One way to do this is to toggle the content and the css for the h1 and h3 elements
+
+This applies to each of the 3 product boxes.
+

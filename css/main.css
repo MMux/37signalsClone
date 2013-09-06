@@ -64,7 +64,6 @@ p {
 	line-height: 27px;
 }
 
-
 /* -------- nav styles -------- */
 #nav  {
 	display: inline-block;
@@ -105,9 +104,50 @@ div.logo {
 	text-align: center;
 }
 
+/*  -----   headline area that toggles   -----   */
+div#headline {
+	margin: 0 auto;
+	width: 850px;
+/* 	border: 1px dotted pink; */
+/* 	display: none;	 */
+}
+
+div#headlineBc {
+	display: none;
+	margin: 0 auto;
+	width: 850px;	
+	text-align: center;
+
+}
+
+div#headlineHr {
+	display: none;
+	margin: 0 auto;
+	width: 850px;
+	text-align: center;
+	
+}
+
+div#headlineCf {
+	display: none;
+	margin: 0 auto;
+	width: 850px;
+	text-align: center;
+	
+}
+
+
+
+#headlineCf, h3 {
+	font-size: 15px;
+	font-family: "Lucida Grande", "Times New Roman"; 
+}
+
+#headlineBc headlineCf headlineHr, a {
+	text-decoration: underline;
+}
+
 /* ----  Product Selector Box ----*/
-
-
 
 div.productSelect {
 	display: block;
@@ -130,6 +170,7 @@ div #productWrap a {
 }
 
 div.productBox {
+	position: relative;
 	float: left;
 	margin: 20px;
 	padding: 20px 18px;
@@ -162,6 +203,20 @@ div.productBox {
 img.productPic {
 	margin: 0 0 5px 0;
 	
+}
+
+img.prodArrow {
+	top:-38px;
+	left: 140px;
+/* 	display: none; */
+	position: absolute;
+}
+
+img.prodArrowRight {
+	top:-38px;
+	left: -10px;
+/* 	display: none; */
+	position: absolute;
 }
 
 p.prodDesc {
@@ -199,11 +254,11 @@ hr.sectionBreak {
 	margin: 20px auto;
 	width: 100%;
 	height: 20px;
+	border: none;
 	background-image: url("../images/stars.png");
 	background-position: center center;
 	background-repeat: no-repeat;
 	text-align: center;
-	border: none;
 }
 
 
