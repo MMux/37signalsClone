@@ -5,8 +5,8 @@
 	<link rel="stylesheet" href="css/main.css" type="text/css" />
 	<title>Mike Moss's 37 Signals Homepage Homework Assignment</title>
 	<link rel="SHORTCUT ICON" href="favicon.ico">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/application.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 	<body>
 		<div class="wrapper">
@@ -20,13 +20,15 @@
 				<li><a href="#">System status</a></li>
 				<li><a href="#" class="signIn">Sign in</a></li>
 			</ul>
+            <div id="container">
 			<div id="bannerMain">
 			<!-- begin bannerMain -->
 				<div class="logo">
 					<img src="images/logo-37s-large.png">
 				</div>
 					<!-- Headline area that toggles based on product hover -->
-					<div id="headline"><!-- default headline -->
+                    <div id="headlines">
+					<div id="headline" class="headline"><!-- default headline -->
 
 						<h1>
 						Making collaboration productive and<br/>enjoyable for people every day.
@@ -35,7 +37,7 @@
 							Frustration-free web apps for collaboration, sharing information, and making decisions.
 						</h3> 
 					</div><!-- end default -->
-					<div id="headlineBc">
+					<div id="headlineBc" class="headline">
 						<h1>
 						<a href="#">Basecamp</a> is the project management tool you wish you had on your last project.
 						</h1>
@@ -43,7 +45,7 @@
 							Are you still managing projects with email? Are you still using Excel for your to-do lists? It's time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.
 						</h3> 
 					</div><!-- end headlineBc -->
-					<div id="headlineHr">
+					<div id="headlineHr" class="headline">
 						<h1>
 						<a href="#">Highrise</a> remembers the important things about people you'd normally forget.
 						</h1>
@@ -51,7 +53,7 @@
 							Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up. Over 20,000,000 contacts are tracked using Highrise.
 						</h3> 
 					</div><!-- end headlineHr -->
-					<div id="headlineCf">
+					<div id="headlineCf" class="headline">
 						<h1>
 						From near or far, <a href="#">Campfire</a> helps teams work together over the web in real-time.
 						</h1>
@@ -59,13 +61,13 @@
 							Share ideas, discussions, concepts, images, code samples, videos, mockups, and documents in a real-time private chat room. We couldn't run our own business without Campfire.
 						</h3> 
 					</div><!-- end headline -->
+                </div> <!-- end headlines -->
 			</div><!-- end bannerMain -->
 			<!-- begin productSelect -->
 				<div class="productSelect clearfix">
 					<div id="productWrap">
-						<a href="#">
 						<!-- link wrapping product box -->
-							<div class="productBox">
+							<div class="productBox" data-target="headlineBc">
 								<img class="productPic" src="images/logo-bc.png"/>
 								<div>
 									<h2>Basecamp</h2><sup>&reg;</sup>
@@ -75,10 +77,8 @@
 								<img class="prodArrow" src="images/arrow-left.png">
 
 							</div>
-						</a>
-						<a href="#"> 
 						<!-- link wrapping product box -->	
-							<div class="productBox">
+							<div class="productBox" data-target="headlineHr">
 								<img class="productPic" src="images/logo-hr.png"/>
 								<div>
 									<h2>Highrise</h2><sup>&reg;</sup>
@@ -87,22 +87,20 @@
 								<p class="desc">Know the people you do business with.</p>
 								<img class="prodArrow" src="images/arrow-left.png">
 							</div>
-						</a>
-						<a href="#">
 						<!-- link wrapping product box -->	
-							<div class="productBox">
+							<div class="productBox" data-target="headlineCf">
 								<img class="productPic" src="images/logo-cf.png"/>
 								<div>
 									<h2>Campfire</h2><sup>&#8482;</sup>
 								</div>
 								<p class="prodDesc">Work in Real&#8212;Time</p>
 								<p class="desc">Group chat rooms for your business.</p>
-								<img class="prodArrowRight" src="images/arrow-right.png">
+								<img class="prodArrow right" src="images/arrow-right.png">
 
 							</div>
-						</a>
 					</div><!-- end productWrap -->	
 				</div><!-- end productSelect -->
+            </div>
 			<hr class="sectionBreak"></hr>
 		</div><!-- end wrapper -->
 	</body>
