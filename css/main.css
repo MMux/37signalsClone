@@ -15,8 +15,7 @@
 html,body {
 	margin: 0 auto;
 	font-size: 12px;
-	font-family: "Lucida Grande", Arial, sans-serif;
-	
+	font-family: "Lucida Grande", Arial, sans-serif;	
 }
 
 a {
@@ -38,7 +37,6 @@ h1 {
 	font-size: 58px;
 	font-family: "Crimson Text", "Times New Roman";
 	line-height: 58px;
-
 }
 
 h2 {
@@ -117,7 +115,6 @@ div#headlineBc {
 	margin: 0 auto;
 	width: 850px;	
 	text-align: center;
-
 }
 
 div#headlineHr {
@@ -163,6 +160,10 @@ div.productSelect {
 	margin: 0 auto;
 	width: 672px;
 	white-space: nowrap;
+}
+
+div #prodBc { 
+	display: block; 
 }
 
 div #productWrap a { 
@@ -215,7 +216,7 @@ img.prodArrow {
 img.prodArrowRight {
 	top:-38px;
 	left: -10px;
-/* 	display: none; */
+	display: none;
 	position: absolute;
 }
 
