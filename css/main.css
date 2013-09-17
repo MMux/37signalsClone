@@ -31,12 +31,11 @@ h1 {
 	margin-top: 14px;
 	color: #232323;
 	text-align: center;
-	white-space: nowrap;
 	letter-spacing: -2px;
 	font-weight: 400;
-	font-size: 58px;
+	font-size: 53px;
 	font-family: "Crimson Text", "Times New Roman";
-	line-height: 58px;
+	line-height: 55px;
 }
 
 h2 {
@@ -49,7 +48,6 @@ h2 {
 h3 {
 	margin-top: -15px;
 	text-align: center;
-	white-space: nowrap;
 	font-weight: 400;	
 	font-size: 20px;
 	font-family: "Crimson Text", "Times New Roman";
@@ -102,12 +100,9 @@ div.logo {
 	text-align: center;
 }
 
-/*  -----   headline area that toggles   -----   */
-div#headline {
-	margin: 0 auto;
+.headline {
+    margin: 0 auto; 
 	width: 850px;
-/* 	border: 1px dotted pink; */
-/* 	display: none;	 */
 }
 
 div#headlineBc {
@@ -117,30 +112,18 @@ div#headlineBc {
 	text-align: center;
 }
 
-div#headlineHr {
-	display: none;
-	margin: 0 auto;
-	width: 850px;
-	text-align: center;
-	
-}
-
-div#headlineCf {
-	display: none;
-	margin: 0 auto;
-	width: 850px;
-	text-align: center;
-	
+/*  -----   headline area that toggles   -----   */
+div#headline {
+    display: block;
 }
 
 
-
-#headlineCf, h3 {
+h3 {
 	font-size: 15px;
 	font-family: "Lucida Grande", "Times New Roman"; 
 }
 
-#headlineBc headlineCf headlineHr, a {
+.headline a {
 	text-decoration: underline;
 }
 
@@ -159,7 +142,6 @@ div.productSelect {
 	display: block;
 	margin: 0 auto;
 	width: 672px;
-	white-space: nowrap;
 }
 
 div #prodBc { 
@@ -207,13 +189,17 @@ img.productPic {
 }
 
 img.prodArrow {
+    display: none;
+}
+
+img.prodArrow {
 	top:-38px;
 	left: 140px;
 /* 	display: none; */
 	position: absolute;
 }
 
-img.prodArrowRight {
+img.prodArrow.right {
 	top:-38px;
 	left: -10px;
 	display: none;
@@ -262,23 +248,11 @@ hr.sectionBreak {
 	text-align: center;
 }
 
+#container {
+    width: 850px;
+    margin: 0px auto;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#headlines {
+    height: 200px;
+}
